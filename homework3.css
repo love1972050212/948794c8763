@@ -1,0 +1,79 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body .background {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@-webkit-keyframes rotate-in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    border-bottom: 25px solid yellow;
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotate-in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    border-bottom: 25px solid yellow;
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes rotate-out {
+  from {
+    transform: rotate(180deg);
+    border-bottom: 25px solid yellow;
+  }
+  to {
+    transform: rotate(0deg);
+    border-bottom: 25px solid blue;
+  }
+}
+@keyframes rotate-out {
+  from {
+    transform: rotate(180deg);
+    border-bottom: 25px solid yellow;
+  }
+  to {
+    transform: rotate(0deg);
+    border-bottom: 25px solid blue;
+  }
+}
+body .background .triangle {
+  text-align: center;
+  display: flex;
+  border-right: 15px solid white;
+  border-left: 15px solid white;
+  border-bottom: 25px solid blue;
+  display: inline-block;
+}
+body .background .triangle:hover {
+  -webkit-animation-name: rotate-in;
+          animation-name: rotate-in;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transition: property duration timing-function;
+}
+body .background .triangle {
+  -webkit-animation-name: rotate-out;
+          animation-name: rotate-out;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transition: property duration timing-function;
+}/*# sourceMappingURL=homework3.css.map */

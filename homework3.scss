@@ -1,0 +1,53 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    .background {
+        @keyframes rotate-in {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                border-bottom: 25px solid yellow;
+                transform: rotate(180deg);
+            }
+        }
+        @keyframes rotate-out {
+            from {
+                transform: rotate(180deg);
+                border-bottom: 25px solid yellow;
+            }
+            to {
+                transform: rotate(0deg);
+                border-bottom: 25px solid blue;
+            }
+        }
+
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .triangle {
+            text-align: center;
+            display: flex;
+            border-right: 15px solid white;
+            border-left: 15px solid white;
+            border-bottom: 25px solid blue;
+            display: inline-block;
+        }
+        .triangle:hover {
+            animation-name: rotate-in;
+            animation-iteration-count: 1;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            transition: property duration timing-function;
+        }
+        .triangle {
+            animation-name: rotate-out;
+            animation-iteration-count: 1;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            transition: property duration timing-function;
+        }
+    }
+}
