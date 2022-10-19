@@ -49,9 +49,8 @@ body .background {
 }
 body .background .triangle {
   text-align: center;
-  display: flex;
-  border-right: 15px solid white;
-  border-left: 15px solid white;
+  border-right: 30px solid white;
+  border-left: 30px solid white;
   border-bottom: 25px solid blue;
   display: inline-block;
 }
